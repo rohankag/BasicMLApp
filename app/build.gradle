@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "23"
+
+    defaultConfig {
+        applicationId "com.android.activitypredictionapp"
+        minSdkVersion 19
+        targetSdkVersion 19
+
+        ndk {
+            moduleName "signal"
+            ldLibs "log"
+        }
+    }
+}

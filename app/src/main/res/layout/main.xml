@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/train"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Train" />
+
+        <Button
+            android:id="@+id/classifiy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Classify" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/train_eating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Saving Eating Data"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/train_running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Saving Running Data"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/train_walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Saving Walking Data"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/copy_data_to_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Data to File"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/stop_prediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Prediction"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="Parameters : "
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="K-Fold : 3\nGamma : 0.0\nCost : 1\nKernel Type : 2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/on_going_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:text="DETECTING..."
+        android:textSize="34sp" />
+
+</LinearLayout>
